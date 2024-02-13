@@ -16,16 +16,15 @@
       <header class="header">
         <img
           src="<%=require('./images/logo.svg')%>"
-          alt="logo"
+          alt="around the US logo"
           class="header__logo"
         />
       </header>
-
       <main class="content">
         <section class="profile">
           <div class="profile__image-container">
             <img
-              src="<%=require('./images/avatar.png')%>"
+              src="./images/jacquess_cousteau.png"
               alt="avatar"
               class="profile__image"
             />
@@ -35,185 +34,41 @@
               class="profile__image-edit"
             />
           </div>
-          <div class="profile__info">
-            <h1 class="profile__title">Jacques Cousteau</h1>
-            <button type="button" class="profile__edit-button"></button>
-            <p class="profile__description">Explorer</p>
+        </main>
+        <footer class="footer">
+          <div class="footer__contents">
+            <div class="footer__content">
+              <img
+                src="./images/logo_coffeeshop_light.svg"
+                alt="coffee shop logo"
+                class="footer__logo"
+              />
+            </div>
+            <div class="footer__content footer__content_content_social">
+              <h3 class="footer__social-heading">Social media</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="./images/facebook_white.svg"
+                      alt="Facebook icon"
+                      class="footer__social-icon"
+                    />Facebook</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__social-link"
+                    ><img
+                      src="./images/instagram_white.svg"
+                      alt="Facebook icon"
+                      class="footer__social-icon"
+                    />Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <button type="button" class="profile__add-button"></button>
-        </section>
-        <section class="cards">
-          <ul class="cards__list"></ul>
-        </section>
-      </main>
-    </div>
-
-    <footer class="footer">
-      <p class="footer__copyright">© 2022 Around The U.S.</p>
-    </footer>
-
-    <div class="popup" id="modal">
-      <div class="popup__container">
-        <img
-          src="<%=require('./images/closebutton.svg')%>"
-          alt="close button"
-          class="popup__closebutton"
-          id="modal-closebutton"
-        />
-        <p class="popup__title">Edit Profile</p>
-        <form class="popup__form" id="modal-form">
-          <fieldset class="popup__fieldset">
-            <label class="popup__label" for="name">
-              <input
-                class="popup__input"
-                type="text"
-                name="name"
-                id="popup-name"
-                placeholder="name"
-                minlength="2"
-                maxlength="40"
-                required
-              />
-              <span class="popup__error" id="popup-name-error"></span>
-            </label>
-            <label class="popup__label" for="description">
-              <input
-                class="popup__input"
-                type="text"
-                name="description"
-                id="popup-description"
-                placeholder="Description"
-                minlength="2"
-                maxlength="200"
-                required
-              />
-              <span class="popup__error" id="popup-description-error"></span>
-            </label>
-            <button class="popup__button" type="submit">Save</button>
-          </fieldset>
-          <fieldset class="popup__fieldset"></fieldset>
-        </form>
+          <p class="footer__copyright">© 2023 Mouachee Thao</p>
+        </footer>
       </div>
-    </div>
-
-    <div class="popup" id="add-popup">
-      <div class="popup__container">
-        <img
-          src="<%=require('./images/closebutton.svg')%>"
-          alt="close button"
-          class="popup__closebutton"
-          id="add-popupclosebutton"
-        />
-        <p class="popup__title">New Place</p>
-        <form class="popup__form" id="add-popupform">
-          <fieldset class="popup__fieldset">
-            <label class="popup__label" for="title">
-              <input
-                class="popup__input"
-                type="text"
-                id="popup-title"
-                name="name"
-                placeholder="Title"
-                required
-                minlength="2"
-                maxlength="30"
-              />
-              <span class="popup__error" id="popup-title-error"></span>
-            </label>
-            <label class="popup__label" for="imagelink">
-              <input
-                class="popup__input"
-                type="url"
-                id="popup-imagelink"
-                name="link"
-                placeholder="Image link"
-                required
-              />
-              <span class="popup__error" id="popup-imagelink-error"></span>
-            </label>
-            <button class="popup__button" type="submit">Create</button>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-
-    <div class="popup" id="preview-popup">
-      <div
-        class="popup__container, popup__container_image"
-        id="popup-container"
-      >
-        <img
-          src="<%=require('./images/closebutton.svg')%>"
-          alt="close button"
-          class="popup__closebutton"
-          id="popup-closebutton"
-        />
-        <img class="popup__image" src="#" alt="" id="popup-image" />
-        <p class="popup__text" id="popup-text"></p>
-      </div>
-    </div>
-
-    <template id="card-template">
-      <li class="card">
-        <img src="#" alt="" class="card__image" />
-        <button class="card__trash-button" type="button">
-          <img src="<%=require('./images/Trash.svg')%>" />
-        </button>
-        <div class="card__description">
-          <h2 class="card__title"></h2>
-          <div class="card__likes-container">
-            <button type="button" class="card__like-button"></button>
-            <p class="card__likes-counter"></p>
-          </div>
-        </div>
-      </li>
-    </template>
-
-    <div class="popup" id="delete-popup">
-      <div class="popup__container popup__container_delete">
-        <img
-          src="<%=require('./images/closebutton.svg')%>"
-          alt="close button"
-          class="popup__closebutton"
-          id="delete-popupclosebutton"
-        />
-        <p class="popup__title">Are you sure?</p>
-        <form class="popup__form" id="delete-popupform">
-          <fieldset class="popup__fieldset">
-            <button class="popup__button" id="delete__button" type="submit">
-              Yes
-            </button>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-
-    <div class="popup" id="avi-popup">
-      <div class="popup__container popup__container_avi">
-        <img
-          src="<%=require('./images/closebutton.svg')%>"
-          alt="close button"
-          class="popup__closebutton"
-          id="avi-popupclosebutton"
-        />
-        <p class="popup__title">Change profile picture</p>
-        <form class="popup__form" id="avi-popupform">
-          <fieldset class="popup__fieldset">
-            <label class="popup__label" for="imagelink">
-              <input
-                class="popup__input"
-                type="url"
-                id="popup-imagelinks"
-                name="avatar"
-                placeholder="Image link"
-                required
-              />
-              <span class="popup__error" id="popup-imagelinks-error"></span>
-            </label>
-            <button class="popup__button" type="submit">save</button>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-  </body>
-</html>
+    </body>
