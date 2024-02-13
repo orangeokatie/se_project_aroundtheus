@@ -2,286 +2,218 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Around the US</title>
-    <meta
-      name="description"
-      content="Katie Beans is an intimate coffee shop nestled in the lakes of Northen New Jersey."
-    />
-    <meta name="keywords" content="coffee, new jersey, beans" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="around the US" />
+    <meta name="keywords" content="html css" />
     <meta name="author" content="Katie Orangeo" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="shortcuticon" href="./favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Around the US</title>
   </head>
-
-  <body>
-    <div class="page">
+  <body class="page">
+    <div class="page__content">
       <header class="header">
-        <nav class="nav">
-          <img
-            src="./images/logo_coffeeshop_dark.svg"
-            alt="Katie Beans logo"
-            class="nav__logo"
-          />
-          <ul class="nav__links">
-            <li>
-              <a href="#recipes" class="nav__link">recipes</a>
-            </li>
-            <li>
-              <a href="#reservation" class="nav__link">book a table</a>
-            </li>
-            <li>
-              <a href="#menu" class="nav__link">menu</a>
-            </li>
-            <li>
-              <a href="#contacts" class="nav__link">contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <h1 class="header__title">
-          <span class="header__span-accent">Specialty coffee</span> in the
-          Triple Peaks Library
-        </h1>
         <img
-          src="./images/inside_coffee_shop.png"
-          alt="Illustration 'Inside the coffee shop'"
-          class="header__image"
+          src="<%=require('./images/logo.svg')%>"
+          alt="logo"
+          class="header__logo"
         />
-        <p class="header__description">
-          Welcome to our study zone! We've got the coffee to energize you and
-          the cozy vibes to help you get creative.
-        </p>
-        <div class="header__footer">
-          <div>
-            <p class="header__paragraph">Hours</p>
-            <p class="header__paragraph">Monday - Friday (10:00-19:00)</p>
-            <p class="header__paragraph">Saturday - Sunday (11:00-18:00)</p>
-          </div>
-          <p class="header__paragraph">
-            200 Success Avenue, The Town of Triple Peaks
-          </p>
-        </div>
       </header>
+
       <main class="content">
-        <section class="recipes" id="recipes">
-          <div class="recipes__content">
-            <h2 class="recipes__title">Recipes</h2>
-          </div>
-          <p class="recipes__subtitle">
-            Check out some recipes we've collected for your home-brewing
-            convenience:
-          </p>
-          <div class="recipes__videos">
-            <div>
-              <iframe
-                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=ubgLMmVggajyT41k"
-                class="recipes__iframe"
-              ></iframe>
-              <p class="recipes__video-caption">
-                <span>Aeropress recipe</span> ~5min
-              </p>
-            </div>
-            <div>
-              <iframe
-                src="https://www.youtube.com/embed/st571DYYTR8?si=aTIhGZPxZcWa_x9u"
-                class="recipes__iframe"
-              ></iframe>
-              <p class="recipes__video-caption">
-                <span>French press recipe</span> ~15min
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="reservation" id="reservation">
-          <h2 class="reservation__title">Book a table</h2>
-          <form action="reservation" class="reservation__form form">
-            <fieldset class="form__fieldset">
-              <label for="name" class="form__label">
-                Name*
-                <input
-                  type="text"
-                  id="name"
-                  class="form__input"
-                  placeholder="Name Surname"
-                />
-              </label>
-
-              <label for="guests" class="form__label">
-                Number of guests*
-                <input
-                  type="number"
-                  id="guests"
-                  class="form__input"
-                  placeholder="1-8"
-                />
-              </label>
-
-              <label for="datetime" class="form__label">
-                Date & time*
-                <input
-                  type="datetime-local"
-                  id="datetime"
-                  class="form__input"
-                />
-              </label>
-
-              <label for="email" class="form__label">
-                Your email*
-                <input
-                  type="email"
-                  id="email"
-                  class="form__input"
-                  placeholder="email@email.com"
-                />
-              </label>
-            </fieldset>
-            <button type="submit" class="form__button">Book a table</button>
-            <label for="terms" class="form__label form__label_type_checkbox">
-              <input type="checkbox" id="terms" class="form__checkbox" />
-              I agree with terms of use
-            </label>
-          </form>
-        </section>
-        <section class="menu" id="menu">
-          <h2 class="menu__title">Menu</h2>
-          <p class="menu__subtitle">
-            We brew coffee from locally roasted, Fairtrade certified beans and
-            use biodegradable cups. All teas from our collection are $2/cup.
-          </p>
-          <ul class="menu__cards">
-            <li class="card">
-              <h3 class="card__title">Filter</h3>
-              <ul class="card__list">
-                <li class="card__list-item">
-                  Regular (12 oz)<span class="card__list-divider"></span>$1
-                </li>
-                <li class="card__list-item">
-                  Large (16 oz)<span class="card__list-divider"></span>$1.25
-                </li>
-                <li class="card__list-item">
-                  XL (20 oz)<span class="card__list-divider"></span>$1.5
-                </li>
-                <li class="card__list-item">
-                  Party-size (24 oz, decaf)<span
-                    class="card__list-divider"
-                  ></span
-                  >$1.75
-                </li>
-                <li class="card__list-item">
-                  Iced Coffee (16 oz)<span class="card__list-divider"></span
-                  >$1.25
-                </li>
-              </ul>
-            </li>
-            <li class="card">
-              <h3 class="card__title">Espresso</h3>
-              <ul class="card__list">
-                <li class="card__list-item">
-                  Macchiato<span class="card__list-divider"></span>$2.25
-                </li>
-                <li class="card__list-item">
-                  Cortado<span class="card__list-divider"></span>$2.5
-                </li>
-                <li class="card__list-item">
-                  Mocha<span class="card__list-divider"></span>$3
-                </li>
-                <li class="card__list-item">
-                  Sunrise in the Bay Area (decaf)<span
-                    class="card__list-divider"
-                  ></span
-                  >$10
-                </li>
-              </ul>
-            </li>
-            <li class="card">
-              <h3 class="card__title">Baked Goods</h3>
-              <ul class="card__list">
-                <li class="card__list-item">
-                  Almond Croissant<span class="card__list-divider"></span>$2
-                </li>
-                <li class="card__list-item">
-                  Banana Bread<span class="card__list-divider"></span>$1.75
-                </li>
-                <li class="card__list-item">
-                  Key Lime Pie<span class="card__list-divider"></span>$3
-                </li>
-                <li class="card__list-item">
-                  Blue Velvet Cake<span class="card__list-divider"></span>$3.75
-                </li>
-                <li class="card__list-item">
-                  Web Cookie<span class="card__list-divider"></span>$2
-                </li>
-                <li class="card__list-item">
-                  Fresh Bug’uette<span class="card__list-divider"></span>$0.25
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section class="about" id="About">
-          <h2 class="about__title">About the coffee shop</h2>
-          <div class="about__content">
-            <p class="about__paragraph">
-              Our coffee shop is located in the Triple Peaks Library. It
-              features 6 tables and free WiFi.
-            </p>
-
-            <p class="about__paragraph">
-              Our main mission is keeping guests cozy and energized.
-            </p>
-            <p class="about__paragraph">
-              Besides that, we try to reduce our environmental impact — so we
-              don't sell single-use cups. But you can buy one of our reusable
-              cups!
-            </p>
-          </div>
-          <div class="about__circle"></div>
-          <div class="about__circle about__circle_animation_blurred"></div>
-        </section>
-      </main>
-      <footer class="footer" id="contacts">
-        <div class="footer__columns">
-          <div class="footer__column">
+        <section class="profile">
+          <div class="profile__image-container">
             <img
-              src="./images/logo_coffeeshop_light.svg"
-              alt="Triple Espresso Logo"
-              class="footer__logo"
+              src="<%=require('./images/avatar.png')%>"
+              alt="avatar"
+              class="profile__image"
+            />
+            <img
+              src="<%=require('./images/editpencil.svg')%>"
+              alt="avatar"
+              class="profile__image-edit"
             />
           </div>
-          <div class="footer__column footer__column_content_social">
-            <h3 class="footer__social-heading">Social Media</h3>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a href="#" class="footer__social-link">
-                  <img
-                    src="images/facebook_white.svg"
-                    alt="Facebook logo"
-                    class="footer__social-icon"
-                  />
-                  Facebook
-                </a>
-              </li>
-              <li class="footer__list-item">
-                <a href="#" class="footer__social-link">
-                  <img
-                    src="images/instagram_white.svg"
-                    alt="Instagram logo"
-                    class="footer__social-icon"
-                  />
-                  Instagram
-                </a>
-              </li>
-            </ul>
+          <div class="profile__info">
+            <h1 class="profile__title">Jacques Cousteau</h1>
+            <button type="button" class="profile__edit-button"></button>
+            <p class="profile__description">Explorer</p>
+          </div>
+          <button type="button" class="profile__add-button"></button>
+        </section>
+        <section class="cards">
+          <ul class="cards__list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2022 Around The U.S.</p>
+    </footer>
+
+    <div class="popup" id="modal">
+      <div class="popup__container">
+        <img
+          src="<%=require('./images/closebutton.svg')%>"
+          alt="close button"
+          class="popup__closebutton"
+          id="modal-closebutton"
+        />
+        <p class="popup__title">Edit Profile</p>
+        <form class="popup__form" id="modal-form">
+          <fieldset class="popup__fieldset">
+            <label class="popup__label" for="name">
+              <input
+                class="popup__input"
+                type="text"
+                name="name"
+                id="popup-name"
+                placeholder="name"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <span class="popup__error" id="popup-name-error"></span>
+            </label>
+            <label class="popup__label" for="description">
+              <input
+                class="popup__input"
+                type="text"
+                name="description"
+                id="popup-description"
+                placeholder="Description"
+                minlength="2"
+                maxlength="200"
+                required
+              />
+              <span class="popup__error" id="popup-description-error"></span>
+            </label>
+            <button class="popup__button" type="submit">Save</button>
+          </fieldset>
+          <fieldset class="popup__fieldset"></fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="add-popup">
+      <div class="popup__container">
+        <img
+          src="<%=require('./images/closebutton.svg')%>"
+          alt="close button"
+          class="popup__closebutton"
+          id="add-popupclosebutton"
+        />
+        <p class="popup__title">New Place</p>
+        <form class="popup__form" id="add-popupform">
+          <fieldset class="popup__fieldset">
+            <label class="popup__label" for="title">
+              <input
+                class="popup__input"
+                type="text"
+                id="popup-title"
+                name="name"
+                placeholder="Title"
+                required
+                minlength="2"
+                maxlength="30"
+              />
+              <span class="popup__error" id="popup-title-error"></span>
+            </label>
+            <label class="popup__label" for="imagelink">
+              <input
+                class="popup__input"
+                type="url"
+                id="popup-imagelink"
+                name="link"
+                placeholder="Image link"
+                required
+              />
+              <span class="popup__error" id="popup-imagelink-error"></span>
+            </label>
+            <button class="popup__button" type="submit">Create</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="preview-popup">
+      <div
+        class="popup__container, popup__container_image"
+        id="popup-container"
+      >
+        <img
+          src="<%=require('./images/closebutton.svg')%>"
+          alt="close button"
+          class="popup__closebutton"
+          id="popup-closebutton"
+        />
+        <img class="popup__image" src="#" alt="" id="popup-image" />
+        <p class="popup__text" id="popup-text"></p>
+      </div>
+    </div>
+
+    <template id="card-template">
+      <li class="card">
+        <img src="#" alt="" class="card__image" />
+        <button class="card__trash-button" type="button">
+          <img src="<%=require('./images/Trash.svg')%>" />
+        </button>
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <div class="card__likes-container">
+            <button type="button" class="card__like-button"></button>
+            <p class="card__likes-counter"></p>
           </div>
         </div>
-        <p class="footer__copyright">&copy; Katie Orangeo</p>
-      </footer>
+      </li>
+    </template>
+
+    <div class="popup" id="delete-popup">
+      <div class="popup__container popup__container_delete">
+        <img
+          src="<%=require('./images/closebutton.svg')%>"
+          alt="close button"
+          class="popup__closebutton"
+          id="delete-popupclosebutton"
+        />
+        <p class="popup__title">Are you sure?</p>
+        <form class="popup__form" id="delete-popupform">
+          <fieldset class="popup__fieldset">
+            <button class="popup__button" id="delete__button" type="submit">
+              Yes
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="avi-popup">
+      <div class="popup__container popup__container_avi">
+        <img
+          src="<%=require('./images/closebutton.svg')%>"
+          alt="close button"
+          class="popup__closebutton"
+          id="avi-popupclosebutton"
+        />
+        <p class="popup__title">Change profile picture</p>
+        <form class="popup__form" id="avi-popupform">
+          <fieldset class="popup__fieldset">
+            <label class="popup__label" for="imagelink">
+              <input
+                class="popup__input"
+                type="url"
+                id="popup-imagelinks"
+                name="avatar"
+                placeholder="Image link"
+                required
+              />
+              <span class="popup__error" id="popup-imagelinks-error"></span>
+            </label>
+            <button class="popup__button" type="submit">save</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </body>
 </html>
