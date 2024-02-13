@@ -77,7 +77,7 @@
 }
 
 .profile__edit-button {
-  background: transparent url(../images/editbutton.svg) center no-repeat;
+  background: transparent url(../images/EDIT\ BUTTON.svg) center no-repeat;
   height: 24px;
   width: 24px;
   grid-area: button;
@@ -92,7 +92,7 @@
 }
 
 .profile__add-button {
-  background: transparent url(../images/plussvg.svg) center no-repeat;
+  background: transparent url(../images/ADD\ BUTTON.svg) center no-repeat;
   width: 150px;
   height: 50px;
   margin-left: auto;
