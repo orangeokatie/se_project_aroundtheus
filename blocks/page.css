@@ -4,7 +4,7 @@
   font-family: "Inter", Arial, sans-serif;
 }
 
-.page__wrapper {
+.page__content {
   padding: 45px 0 60px;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 620px) {
-  .page__wrapper {
+  .page__content {
     padding: 28px 0 36px;
   }
 }
