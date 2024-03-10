@@ -8,11 +8,11 @@
 
 **Intro**
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+This project is "Around the US." The website is built using HTML5 and CSS functions. The project contains the landing page as a profile for explorer Jacques Cousteau. He has an editable profile and photos of locations. The photos are set up in a grid structure and have stylized "like" buttons. The website is responsive and can respond to a variety of screensizes with CSS rules in place regarding overlapping of content.
 
 **Figma**
 
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+https://www.figma.com/file/Es8zZP3ARGH9JGcw60i3OD/Sprint-3_-Around-the-US?type=design&node-id=6432-147&mode=design&t=b7v24Gkz5XDDRp2l-0
 
 **Images**
 
