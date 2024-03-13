@@ -16,7 +16,7 @@ https://www.figma.com/file/Es8zZP3ARGH9JGcw60i3OD/Sprint-3_-Around-the-US?type=d
 
 **Images**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+https://www.dropbox.com/scl/fi/xfu0co8v0wsiho035a8ma/tinified.zip?rlkey=xumti2evnc99v22b8ai8of527&dl=0
 
 Good luck and have fun!
 
