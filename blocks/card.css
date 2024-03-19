@@ -6,6 +6,7 @@
   border-radius: 10px;
   overflow: hidden;
   justify-content: center;
+  flex: 1 0 50%;
 }
 
 .card__image {
