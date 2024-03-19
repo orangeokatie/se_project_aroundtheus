@@ -23,5 +23,3 @@ https://www.dropbox.com/scl/fi/xfu0co8v0wsiho035a8ma/tinified.zip?rlkey=xumti2ev
 Good luck and have fun!
 
 Sprint 3 Video: https://drive.google.com/file/d/1fntiy69pfQkCCAHwP9jjCAY-3rEuYGcU/view?usp=sharing
-
-<!--> question on this feedback: "The layout on tablet screens doesn't correspond to the assignment. Please check how it should look: https://skr.sh/sJOtg5rnY38" this link is invalid/doesn't work. Is this information available in Figma/somewhere else? I don't see it in the brief.

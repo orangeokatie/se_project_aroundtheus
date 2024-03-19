@@ -24,3 +24,17 @@
     padding: 36px 0 48px;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .cards {
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    flex: 1 0 50%;
+  }
+
+  .profile {
+    width: auto;
+  }
+}
