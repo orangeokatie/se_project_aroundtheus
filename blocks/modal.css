@@ -24,20 +24,6 @@
   position: relative;
 }
 
-.modal__close {
-  background-image: url(../images/close.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  bottom: calc(100% + 5px);
-  left: calc(100% + 5px);
-  border: none;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
 .modal__heading {
   color: #000;
   font-family: Inter;
@@ -50,6 +36,20 @@
   height: 23px;
   margin: 0 0 34px;
   padding: 0;
+}
+
+.modal__close {
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .modal__form {
